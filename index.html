@@ -13,17 +13,7 @@
   <link href="assets/css/style.css" rel="stylesheet">
 </head>
 <body>
-  <!-- <iframe src="/assets/img/music.mp3" allow="autoplay" style="display:none" id="iframeAudio"></iframe>
-  <audio autoplay loop  id="playAudio"><source src="/assets/img/music.mp3"></audio>
-  <script>
-    var isChrome = /Chrome/.test(navigator.userAgent) && /Google Inc/.test(navigator.vendor);
-    if (!isChrome){
-        $('#iframeAudio').remove()
-    }
-    else {
-        $('#playAudio').remove()
-    }
-  </script> -->
+  <audio autoplay loop><source src="assets/img/music.mp3" type="audio/mpeg"></audio>
   <header id="header">
     <div class="container-fluid d-flex justify-content-between align-items-center">
       <div class="logo">
@@ -31,15 +21,15 @@
       </div>
     </div>
   </header>
-  <section id="reaper">
+  <section id="reaper" onload="play();">
     <div class="reaper-container">
       <h1>Coming Soon</h1>
       <div class="countdown" data-count="2022/3/1" data-template="%w weeks %d days <br> %h:%m:%s"></div>
     </div>
   </section>
-  <!-- <iframe width="0" height="0" wmode="transparent" src="https://www.youtube.com/embed/_Oxy59i5Ni0?autoplay=1&loop=1" frameborder="0"></iframe> -->
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="assets/vendor/php-email-form/validate.js"></script>
   <script src="assets/js/main.js"></script>
+  </script>
 </body>
 </html>
